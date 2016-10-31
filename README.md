@@ -22,8 +22,8 @@ For this activity you will implement a simple Blog delivery service. Requirement
 
 ### Features (use HTTP GET or POST as you feel is best):
 5.	A View Blog (the landing) page will display the titles of all Blog articles for all users. This page should do the following:
-a.	If the user in her/his present role can View the article, then the title should be a hyperlink to that article.
-b.	If the user in her/his present role is not allowed to view the article, then only display the title of the article (not hyperlinked).
+    - If the user in her/his present role can View the article, then the title should be a hyperlink to that article.
+    - If the user in her/his present role is not allowed to view the article, then only display the title of the article (not hyperlinked).
 6.	The system should provide common header and footer text/images for all pages. Be creative. These headers and footers should be stored in their own HTML content files on the server and delivered as part of the server response.
 7.	Blog articles are aggregations of HTML content fragments stored in individual files under the Blog directory. An article file is a JSON file with the name <id>.art with the following structure:
     - Title: <title>
