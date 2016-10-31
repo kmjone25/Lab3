@@ -31,7 +31,7 @@ b.	If the user in her/his present role is not allowed to view the article, then 
     - Public: Yes/No
     - Fragments: [array of .html file references]
 
-You may design your own identification scheme for the <id>s. Example .art files are provided on Blackboard. When the user accesses the .art file, then (if permitted by role), the application should display the aggregated content header, frag1, frag2, …, footer – you are basically concatenating the content of the files.
+7. You may design your own identification scheme for the <id>s. Example .art files are provided on Blackboard. When the user accesses the .art file, then (if permitted by role), the application should display the aggregated content header, frag1, frag2, …, footer – you are basically concatenating the content of the files.
 
 8.	The media, and Blog directories under your NodeJS server should all be accessible via a direct URL. However, URLs to /<id>.art must be parsed and handled by the server. And direct access to an article by an unauthorized user role must be handled with an appropriate error message returned (what would be appropriate? – think HTTP Primer module).
 
