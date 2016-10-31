@@ -25,13 +25,15 @@ For this activity you will implement a simple Blog delivery service. Requirement
     - If the user in her/his present role can View the article, then the title should be a hyperlink to that article.
     - If the user in her/his present role is not allowed to view the article, then only display the title of the article (not hyperlinked).
 6.	The system should provide common header and footer text/images for all pages. Be creative. These headers and footers should be stored in their own HTML content files on the server and delivered as part of the server response.
-7.	Blog articles are aggregations of HTML content fragments stored in individual files under the Blog directory. An article file is a JSON file with the name <id>.art with the following structure:
+7.	Blog articles are aggregations of HTML content fragments stored in individual files under the Blog directory. An article file is a JSON file with the name:
+```sh
+ <id>.art with the following structure:
     - Title: <title>
     - Author: <author>
     - Public: Yes/No
     - Fragments: [array of .html file references]
     - You may design your own identification scheme for the <id>s. Example .art files are provided on Blackboard. When the user accesses the .art file, then (if permitted by role), the application should display the aggregated content header, frag1, frag2, …, footer – you are basically concatenating the content of the files.
-
+```
 8.	The media, and Blog directories under your NodeJS server should all be accessible via a direct URL. However, URLs to /<id>.art must be parsed and handled by the server. And direct access to an article by an unauthorized user role must be handled with an appropriate error message returned (what would be appropriate? – think HTTP Primer module).
 
 ### Non-functional requirements:
