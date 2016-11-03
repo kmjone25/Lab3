@@ -23,7 +23,8 @@ http.createServer(function (req, res) {
     } else {
         console.log("no cookie found");
     }
-   
+  
+    //Gets the data from the username password. 
     if (req.method == "POST"){
         var reqData = '';
         req.on('data', function (chunk) {
@@ -44,6 +45,7 @@ http.createServer(function (req, res) {
             }
         });
     } 
+    //If Method is get then it will go to the specified URL.
     else{
         if (urlObj.pathname === '/' || urlObj.pathname === '/index.html') {
             res.writeHead(200, { 'Content-Type': 'text/html' });
